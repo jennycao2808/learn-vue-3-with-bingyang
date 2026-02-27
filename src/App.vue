@@ -71,7 +71,7 @@ function changeWizard() {
 }
 
 let wizards = ref(['Harry', 'Hermione', 'Ron'])
-</script>
+</script> 
 
 <style scoped>
 .card {
