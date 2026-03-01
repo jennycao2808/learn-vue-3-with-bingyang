@@ -26,52 +26,52 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-let message = ref('Hello, Reactivity!')
-let number = ref(1)
+let message = ref("Hello, Reactivity!");
+let number = ref(1);
 
 function changeMessageToUpperCase() {
-  message.value = message.value.toUpperCase()
-  console.log(message.value)
+  message.value = message.value.toUpperCase();
+  console.log(message.value);
 }
 function incrementNumber() {
-  number.value += 1
-  console.log(number.value)
+  number.value += 1;
+  console.log(number.value);
 }
 
 let wizard = ref({
   id: 1001,
-  name: 'Harry Potter',
-  house: 'Gryffindor',
+  name: "Harry Potter",
+  house: "Gryffindor",
   age: 17, // Age during the final battle of Hogwarts
   wand: {
-    core: 'Phoenix feather',
-    wood: 'Holly'
-  }
-})
+    core: "Phoenix feather",
+    wood: "Holly",
+  },
+});
 
 function changeNameToUpperCase() {
-  wizard.value.name = wizard.value.name.toUpperCase()
+  wizard.value.name = wizard.value.name.toUpperCase();
 }
 function changeWandCore() {
-  wizard.value.wand.core = 'Unicorn hair'
+  wizard.value.wand.core = "Unicorn hair";
 }
 function changeWizard() {
   wizard.value = {
     id: 1002,
-    name: 'Hermione Granger',
-    house: 'Gryffindor',
+    name: "Hermione Granger",
+    house: "Gryffindor",
     age: 17,
     wand: {
-      core: 'Dragon heartstring',
-      wood: 'Vine'
-    }
-  }
+      core: "Dragon heartstring",
+      wood: "Vine",
+    },
+  };
 }
 
-let wizards = ref(['Harry', 'Hermione', 'Ron'])
-</script> 
+let wizards = ref(["Harry", "Hermione", "Ron"]);
+</script>
 
 <style scoped>
 .card {
