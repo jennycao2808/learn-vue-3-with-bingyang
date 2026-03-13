@@ -1,21 +1,13 @@
 <template>
-  <ButtonCounter></ButtonCounter>
-  <ButtonCounter></ButtonCounter>
-
-  <button-counter></button-counter>
-
-  <hr />
-
-  <div style="background-color: orange; padding: 5px">
-    This is the root component.
-    <ComponentA></ComponentA>
-    <ComponentA></ComponentA>
-  </div>
+  <AlertBox>Invalid username or password. Please try again.</AlertBox>
+  <AlertBox></AlertBox>
+  <AlertBox>
+    <h1>The request timed out. Please refresh the page and try again.</h1>
+  </AlertBox>
 </template>
 
 <script setup>
-import ButtonCounter from "./ButtonCounter.vue";
-import ComponentA from "@/ComponentA.vue";
+import AlertBox from "./AlertBox.vue";
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>
